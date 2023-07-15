@@ -1,0 +1,14 @@
+   ListNode* temp=head;
+        int cnt=0;
+          while(temp!=NULL){
+               cnt++;
+               temp=temp->next;
+
+          }
+          int n=cnt/2;
+          while(n){
+              head=head->next;
+              n--;
+          }
+          return head;
+    }
